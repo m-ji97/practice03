@@ -8,14 +8,17 @@ public class Ex07 {
 		System.out.println("숫자를 입력하세요");
 		int e = sc.nextInt();
 
-		for (int j = 1; j <=e; j++) {
-			for (int i = 1; i <=1; i++) {
-				System.out.println();
+		for (int j = 1; j<=e; j++) {
+			for (int i = 1; i<=j; i++) {
+				
+				System.out.print(j);
 			}
 			System.out.println();
-			
 		}
+
+		
 		sc.close();
 	}
+	
 
 }
