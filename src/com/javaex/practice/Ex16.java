@@ -13,11 +13,12 @@ public class Ex16 {
 		System.out.print("5의 배수의 개수 : ");
 		for(int i=1; i<=num; i++) {
 			if(i%5==0) {
-				i++;
-				System.out.println(a+"개");
+				a++;
+				
 			}
 			
 		}
+		System.out.println(a);
 		
 		System.out.print("5의 배수의 합계 : ");
 		for(int i=1; i<=num; i++) {
@@ -27,7 +28,7 @@ public class Ex16 {
 		}
 		System.out.println(count);
 		
-		
+	sc.close();	
 	}
 
 }

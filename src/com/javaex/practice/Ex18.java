@@ -1,26 +1,28 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex18 {
 	public static void main(String[] args) {
-		
-		int count = 0;
-		int sum = 0;
-		int a = 0;
-		int b = 0;
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("최대값을 입력하세요 : ");
-		int j = sc.nextInt();
+		System.out.print("숫자를 입력하세요 : ");
+		int num = sc.nextInt();
 
-		for (int i = 1; i <= j; i++){
-			if (i%5==0){
-				count++;
-				sum = sum + i;
+		for(int i=num; i>0; i--) {
+			for(int j=0; j<i; j++) {
+
+				System.out.print("*");
 			}
+			System.out.println();
 		}
-		System.out.println("5의 배수의 개수 : " + count);
-		System.out.println("5의 배수의 합 : " + sum);
-
+		for(int i=2; i<=num; i++) {
+			for(int j=0; j<i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		sc.close();
 	}
 
 }
